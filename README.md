@@ -12,9 +12,9 @@ Each component of the project lives on its dedicated branch. The `main` branch s
 
 | Component | Technology | Branch | Description |
 | :--- | :--- | :--- | :--- |
-| **SSO Auth Backend** | C# / .NET Web API | [`sso-auth-backend`](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/tree/sso-auth-backend) | Handles user registration, login, JWT issuance, and OTP/2FA verification. |
-| **SSO Auth Frontend** | Next.js (Client/Server) | [`sso-auth-frontend`](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/tree/sso-auth-frontend) | The main login portal. Supports English and Amharic localization. |
-| **Movies Frontend** | Next.js (Client/Server) | [`movies-frontend`](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/tree/movies-frontend) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
+| **SSO Auth Backend** | C# / .NET Web API | [`auth-backend`](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/tree/sso-auth-backend) | Handles user registration, login, JWT issuance, and OTP/2FA verification. |
+| **SSO Auth Frontend** | Next.js (Client/Server) | [`auth-frontend`](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/tree/sso-auth-frontend) | The main login portal. Supports English and Amharic localization. |
+| **Movies Frontend** | Next.js (Client/Server) | [`app1-frontend`](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/tree/movies-frontend) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
 
 *(**NOTE:** Remember to update the links above with your actual GitHub repository details.)*
 
