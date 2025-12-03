@@ -1,4 +1,4 @@
-# 🔒 Monorepo: SSO and Secured Resource Applications
+# 🔒 SSO and Secured Resource Applications
 
 This repository hosts a solution demonstrating Single Sign-On (SSO) authentication using JWT cookies across multiple Next.js frontend applications, secured by a C#/.NET backend API.
 
@@ -12,9 +12,10 @@ Each component of the project lives on its dedicated branch. The `main` branch s
 
 | Component | Technology | Branch | Description |
 | :--- | :--- | :--- | :--- |
-| **SSO Auth Backend** | C# / .NET Web API | [`auth-backend`](https://github.com/davetrave/sso-dotnet-nextJs/tree/auth-backend) | Handles user registration, login, JWT issuance, and OTP/2FA verification. |
-| **SSO Auth Frontend** | Next.js (Client/Server) | [`auth-frontend`](https://github.com/davetrave/sso-dotnet-nextJs/tree/auth-frontend) | The main login portal. Supports English and Amharic localization. |
-| **Movies Frontend** | Next.js (Client/Server) | [`app1-frontend`](https://github.com/davetrave/sso-dotnet-nextJs/tree/app1-frontend) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
+| **SSO Auth Backend** | C# / .NET Web API | [`auth-backend`](https://github.com/davetrave/sso-auth-backend/tree/main) | Handles user registration, login, JWT issuance, and OTP/2FA verification. |
+| **SSO Auth Frontend** | Next.js (Client/Server) | [`auth-frontend`](https://github.com/davetrave/sso-auth-frontend/tree/main) | The main login portal. Supports English and Amharic localization. |
+| **App1 Frontend (MoviesApp)** | Next.js (Client/Server) | [`app1-frontend`](https://github.com/davetrave/sso-app1-frontend/tree/main) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
+| **App1 Backend (MoviesApp)** | C# / .NET Web API | [`app1-backend`](https://github.com/davetrave/sso-app1-backend/tree/main) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
 
 *(**NOTE:** Remember to update the links above with your actual GitHub repository details.)*
 
@@ -82,7 +83,7 @@ Each component of the project lives on its dedicated, isolated branch. The `main
 | :--- | :--- | :--- | :--- |
 | **SSO Auth API** | C# / .NET | [`auth-backend`](#set-up-the-c-backend-services) | Handles user registration, login, JWT issuance, and OTP/2FA verification. |
 | **SSO Auth Portal** | Next.js | [`auth-frontend`](#set-up-the-nextjs-frontend-applications) | The main login and dashboard portal. Supports **English/Amharic localization**. |
-| **App 1 API (Movies)**| C# / .NET | [`app1-backend`](#set-up-the-c-backend-services) | Secured API for App 1 (e.g., Movies CRUD). Validates SSO JWT. |
+| **App 1 API (MoviesApp)**| C# / .NET | [`app1-backend`](#set-up-the-c-backend-services) | Secured API for App 1 (e.g., Movies CRUD). Validates SSO JWT. |
 | **App 1 Frontend**| Next.js | [`app1-frontend`](#set-up-the-nextjs-frontend-applications) | Secured resource application 1 (e.g., Movies App). |
 | **App 2 API (Other)** | C# / .NET | [`app2-backend`](#set-up-the-c-backend-services) | Secured API for App 2 (e.g., Course Resources). Validates SSO JWT. |
 | **App 2 Frontend**| Next.js | [`app2-frontend`](#set-up-the-nextjs-frontend-applications) | Secured resource application 2 (e.g., Other App). |
@@ -108,9 +109,7 @@ Because the projects are split across different branches, you must clone the rep
 REPO_URL="YOUR_GITHUB_REPO_URL_HERE" 
 
 # 2. Clone the projects into their respective local directories:
-git clone -b auth-frontend $REPO_URL auth-frontend
-git clone -b auth-backend $REPO_URL auth-backend
-git clone -b app1-frontend $REPO_URL app1-frontend
-git clone -b app1-backend $REPO_URL app1-backend
-git clone -b app2-frontend $REPO_URL app2-frontend
-git clone -b app2-backend $REPO_URL app2-backend
+git clone https://github.com/davetrave/sso-auth-backend.git
+git clone https://github.com/davetrave/sso-auth-frontend.git
+git clone https://github.com/davetrave/sso-app1-backend.git
+git clone https://github.com/davetrave/sso-app1-frontend.git
