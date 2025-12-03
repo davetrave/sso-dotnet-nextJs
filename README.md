@@ -17,7 +17,6 @@ Each component of the project lives on its dedicated branch. The `main` branch s
 | **App1 Frontend (MoviesApp)** | Next.js (Client/Server) | [`app1-frontend`](https://github.com/davetrave/sso-app1-frontend/tree/main) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
 | **App1 Backend (MoviesApp)** | C# / .NET Web API | [`app1-backend`](https://github.com/davetrave/sso-app1-backend/tree/main) | The secured resource application (Movies CRUD). Authenticates via the shared SSO cookie. |
 
-*(**NOTE:** Remember to update the links above with your actual GitHub repository details.)*
 
 ---
 
